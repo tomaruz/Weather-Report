@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        img{
+            height: 500px;
+            width: 500px;
+            object-fit: cover;
+        }
+
+        h4 {
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(11, 13, 49, 0.881);
+            margin-top: 7px;
+            margin-bottom: 9px;
+        }
+
+        #weather-report-container {
+            width: 500px;
+            height: 600px;
+            background-color: brown;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            filter: drop-shadow(0px 0px 10px gray)
+        }
+
+        #hero-image-container {
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        #city-text{
+            position: absolute;
+            margin: 0;
+            font-size: 65px;
+            color: rgba(11, 13, 49, 0.881);
+            left: 22px;
+            bottom: 10px;
+        }
+
+        #days-container {
+            background-color: rgb(255, 255, 255);
+            height: 100px;
+            font-size: 0;
+            display: inline-block;
+        }
+
+        .day {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            display: inline-block;
+
+        }
+        .button:hover {
+            background-color: #ddd;
+        }
+        .button:active{
+            background-color: rgb(195, 228, 245);
+    
+        }
+        .weather-icon{
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="weather-report-container">
+        <div id="hero-image-container">
+            <h4 id="city-text">Jonava</h4>
+            <img src="SimpleCSS-stub/images/jonava.jpg">
+        </div>
+        <div id="days-container">
+            <div class="day button">
+                <h4>Mon</h4>
+                <img class="weather-icon" src="SimpleCss-stub/images/icons/100.svg">
+            </div>
+            <div class="day button">
+                <h4>Tue</h4>
+                <img class="weather-icon" src="SimpleCSS-stub/images/icons/101.svg">
+            </div>
+            <div class="day button">
+                <h4>Wed</h4>
+                <img class="weather-icon" src="SimpleCSS-stub/images/icons/103.svg">
+            </div>
+            <div class="day button">
+                <h4>Thurs</h4>
+                <img class="weather-icon" src="SimpleCSS-stub/images/icons/104.svg">
+            </div>
+            <div class="day button">
+                <h4>Fri</h4>
+                <img class="weather-icon" src="SimpleCSS-stub/images/icons/150.svg">
+            </div>
+            <div class="day button">
+                <h4>Sat</h4>
+                <img class="weather-icon" src="SimpleCSS-stub/images/icons/100.svg">
+            </div>
+            <div class="day button">
+                <h4>Sun</h4>
+                <img class="weather-icon" src="SimpleCSS-stub/images/icons/103.svg">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
